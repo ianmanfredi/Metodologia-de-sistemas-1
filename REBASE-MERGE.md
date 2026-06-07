@@ -30,3 +30,29 @@ si vos y un compañero modificaron exactamente la misma linea del mismo archivo,
 1. abrir el archivo en conflicto y borrar las marcas que te deja git, eligiendo a mano con que parte del codigo te quedas.
 2. guardar el archivo ya limpio.
 3. correr *git add .* y despues un simple *git commit* para terminar de sellar la fusion.
+## `git rebase`
+
+**explicacion**
+
+el comando git rebase toma los commits de tu rama actual y los reanuda sobre el ultimo commit de otra rama, creando un historial lineal. en lugar de crear un commit de fusion (como git merge), reescribe el historial haciendo que parezca que desarrollaste tus cambios justo al final de la otra rama.
+
+**para que sirve**
+
+historial limpio: mantiene el registro de commits en una linea recta y facil de leer.
+evitar commits de fusion: muy usado para actualizar tu rama de trabajo con los ultimos cambios de main sin añadir ruido al historial.
+
+**regla de oro **
+
+nunca utilices git rebase en ramas publicas o compartidas con otros desarrolladores en el servidor (como main o develop). al reescribir la historia, cambias los identificadores de los commits; si alguien mas ya descargo esos commits, su historial local chocara con el tuyo y causara problemas graves en el repositorio.
+
+**ejemplo paso a paso**
+
+imagina que tienes este escenario: tu rama main avanzo y tu rama feature se quedo atras. en lugar de mezclar todo y crear un commit adicional, puedes usar git rebase:
+
+paso 1 - parate en tu rama feature:
+*git checkout feature*
+
+paso 2 - ejecuta el rebase:
+*git rebase main*
+
+git tomara todos tus cambios en feature, los guardara temporalmente, actualizara tu rama para que empiece en el punto mas reciente de main, y luego volvera a aplicar tus commits uno por uno al final.
