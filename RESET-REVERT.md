@@ -28,3 +28,40 @@ deshacer un git add: si agregaste archivos por error con git add y quieres retir
 **precaucion**
 
 dado que git reset reescribe el historial de confirmaciones, no debes usarlo en confirmaciones que ya hayas subido a un repositorio remoto si otras personas ya estan trabajando en el. para deshacer cambios en ramas publicas de forma segura sin alterar la historia, la alternativa correcta es utilizar git revert.
+
+## `git revert`
+
+**explicacion**
+
+el comando git revert sirve para deshacer cambios introducidos por un commit especifico. a diferencia de otros comandos, git revert no elimina ni altera el historial previo; en su lugar, calcula la diferencia inversa de ese commit y crea un nuevo commit que aplica esos cambios inversos.
+
+**por que utilizarlo**
+
+es seguro en repositorios compartidos: al no borrar commits anteriores del registro de git, no altera el historial ni causa conflictos a tus compañeros de equipo (evitando la necesidad de hacer force push).
+trazabilidad: deja un registro claro de que version se deshizo y quien lo hizo.
+
+**como usarlo**
+
+identifica el commit: necesitas el hash (id) del commit que deseas revertir. puedes encontrarlo ejecutando:
+*git log --oneline*
+
+ejecuta el comando: utiliza el hash del commit (ejemplo: a1b2c3d4):
+*git revert a1b2c3d4*
+
+deshacer el ultimo commit: si necesitas deshacer el ultimo commit inmediatamente, puedes usar:
+*git revert HEAD*
+
+guarda y confirma: el comando abrira tu editor de texto predeterminado para que confirmes el mensaje del nuevo commit generado. si quieres hacerlo automaticamente sin abrir el editor, agrega la bandera --no-edit:
+*git revert a1b2c3d4 --no-edit*
+
+**alternativas y detalles**
+
+deshacer varios commits a la vez: puedes revertir un rango de commits utilizando su intervalo, por ejemplo:
+*git revert HEAD~3..HEAD*
+
+resolucion de conflictos: si los cambios que intentas deshacer se solapan con codigo modificado mas recientemente, git pausara el proceso y te pedira que resuelvas los conflictos manualmente antes de generar el commit final.
+
+**comparacion rapida**
+
+* git reset: modifica el historial y elimina los commits anteriores. es util en cambios locales no compartidos ya que es destructivo.
+* git revert: crea un nuevo commit con la operacion inversa. es el estandar para ramas publicas en github o gitlab.
