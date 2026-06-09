@@ -33,3 +33,8 @@
   * Implementación y redacción de las guías completas (descripción, casos de uso y pasos paso a paso) para los comandos `status`, `diff`, `log`, `show`, `reflog` y `help` (uso de `feat:` y `git add`).
   * Corrección e incorporación de apartados omitidos sobre el propósito y uso del comando de ayuda (uso de `fix:`).
   * Normalización y cambio de nomenclatura en los nombres de los archivos del repositorio para mantener la consistencia del formato (uso de `style:`).
+
+#### Captura de un conflicto previo a su resolución
+* **Hash del commit asociado:** `8a7dd97`
+* **Captura:**
+![alt text](https://i.imgur.com/fG3lwF2.png)
