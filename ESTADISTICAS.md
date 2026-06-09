@@ -8,13 +8,9 @@
   * Ejecución exitosa de integraciones (`git merge` y `git rebase`).
   * Reversión de cambios en el historial (`git revert`).
 
-<<<<<<< HEAD
 --- 
 
 ### Estadisticas de Participación: @ianmanfredi
-=======
- ### Estadisticas de Participación: @ianmanfredi
->>>>>>> 8a7dd977cea46c93450316fce4087f9e8ae0bda5
 
 * **Total de commits:** 8
 * **Desglose de uso de comandos en el historial:**
