@@ -8,7 +8,7 @@
   * Ejecución exitosa de integraciones (`git merge` y `git rebase`).
   * Reversión de cambios en el historial (`git revert`).
 
-  ### Estadisticas de Participación: @ianmanfredi
+ ### Estadisticas de Participación: @ianmanfredi
 
 * **Total de commits:** 8
 * **Desglose de uso de comandos en el historial:**
@@ -21,4 +21,6 @@
 * **Captura:**
 ![alt text](image.png)
 
-
+### Estadísticas de Participación: @tomasmertian
+* **Total de commits:** 10
+* Implementación y redacción de las guías completas (descripción, casos de uso y pasos paso a paso) para los comandos status, diff, log, show, reflog y help (uso de feat: y git add).
