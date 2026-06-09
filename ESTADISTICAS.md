@@ -27,7 +27,7 @@
 
 ## Estadísticas de Participación: @tomasmertian
 
-* **Total de commits:** 10
+* **Total de commits:** 16
 
 * **Desglose de uso de comandos en el historial:**
   * Implementación y redacción de las guías completas (descripción, casos de uso y pasos paso a paso) para los comandos `status`, `diff`, `log`, `show`, `reflog` y `help` (uso de `feat:` y `git add`).
