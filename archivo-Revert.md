@@ -1,0 +1,1 @@
+Este es un archivo creado para el uso exclusivo del comando revert.
