@@ -38,3 +38,15 @@
 * **Hash del commit asociado:** `8a7dd97`
 * **Captura:**
 ![alt text](https://i.imgur.com/fG3lwF2.png)
+
+---
+
+### Estadísticas de Participación: @IgnacioCallava
+
+* **Total de commits:** 6
+* **Desglose de uso de comandos en el historial:**
+  * Creación de la estructura base del índice (uso de `feat:` y `git add`).
+  * Implementación de nuevas secciones (uso de `feat:` y `git add`).
+  * Actualización del índice del trabajo (uso de `chore:`).
+  * Reversión de cambios en el historial (`git revert`).
+  * Creación de las guías de los siguientes comandos de git `fetch`, `pull`, `remote`, `init` y `clone` (uso de `feat:` y `git add`).
