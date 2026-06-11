@@ -14,6 +14,13 @@ A continuación, se detalla el índice con los enlaces a la documentación técn
 * [Comandos git branch y git checkout](BRANCH-CHECKOUT.md)
 * [Comandos git rebase y git merge](REBASE-MERGE.md)
 * [Comandos git reset y git revert](RESET-REVERT.md)
+* [Comandos git add y git commit](add-y-commit.md)
+* [Comandos git help](HELP.md)
+* [Comando git config](git-config.md)
+* [Comando git push](git-push.md)
+* [Comando git squash](git-squash.md)
+* [Comandos git log, git show y git reflog](LOG-SHOW-REFLOG.md)
+* [Comandos git status y git diff](STATUS-DIFF.md)
 
 ### 2. Análisis del Repositorio
 * [Estadísticas y Métricas del Proyecto](ESTADISTICAS.md)
